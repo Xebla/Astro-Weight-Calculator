@@ -59,7 +59,21 @@ function handleClickEvent(e) {
 } 
 
 document.getElementById("calculate-button").onclick = handleClickEvent;
-    // feel free to add classes and id's to the HTML elements as you need, 
 
-    // Bonus Challenges 
-    // 8. Reverse the drop down order so that the sun is first.
+// Reverses dropdown menu options for bonus challenge
+
+function reverseDropdown() {
+    // Store planet options inside "dropdown"
+    const dropdown = document.getElementById("planets");
+    // Turn dropdown options into an array
+    const options = Array.from(dropdown.options);
+    // clear existing options
+    dropdown.innerHTML = ''; 
+    // Add options in reverse order
+    options.reverse().forEach(option => {
+      dropdown.appendChild(option);
+    });
+  }
+
+  reverseDropdown();
+
