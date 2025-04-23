@@ -1,26 +1,80 @@
-body {
-    background-color: #1e100a;
-    font-family: "Special Gothic Expanded One", sans-serif;
+body.rick-theme {
+    background-image: url('https://tse1.mm.bing.net/th/id/OIP.lleKfbm4iEU-NYrRncFfigHaEK?rs=1&pid=ImgDetMain');
+    background-size: cover;
+    font-family: "Orbitron", sans-serif;
+    color: #ffffff;
     text-align: center;
+    padding: 20px; 
 }
 
-h2 {
-    color: #132fe8;
-    font-size: 40px;
+.planet {
+    position: absolute;
+    top: 60%; 
+    left: -200px;
+    width: 120px;
+    z-index: 10;
+    animation: floatPlanet 10s linear infinite;
 }
 
-p {
-    color: #ebe9e9;
+@keyframes floatPlanet{
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(150vw);
+        opacity: 0.8;
+    }
 }
 
-button {
-    background-color: #115b72;
-    color: white;
-    padding: 10px 20px;
-    border: none;
+.container {
+    display: flex;
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+    gap: 8px;
+    margin-top: 50px;
+}
+
+#title {
+    font-size: 3rem; /* 3 times user default font size */
+    color: #39ff14; 
+    text-shadow: 5px 5px 10px #000
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+input, select, button {
+    font-size: 1.2rem;
+    padding: 10px;
+    border: 2px solid #39ff14;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #cf2c0f;
+button {
+    background-color: #a100ff;
+    box-shadow: 0 0 10px #39ff14
 }
+
+button:hover {
+    background-color: #39ff14;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block
+}
+
+

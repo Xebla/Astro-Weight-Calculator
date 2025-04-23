@@ -54,12 +54,12 @@ function handleClickEvent(e) {
    const cleanResult = Number(result.toFixed(2));
     // Get result text
     const resultText = document.getElementById("output");
-    // resultText.innerHTML = `If you were on ${planetName}, you would weigh ${result}lbs!`;
-    resultText.innerText = "If you were on " + planetName + ", you would weigh " + result + "lbs!";
+    resultText.innerHTML = `If you were on ${planetName}, you would weigh ${cleanResult}lbs!`;
+    // resultText.innerText = "If you were on " + planetName + ", you would weigh " + result + "lbs!";
 } 
 
+document.getElementById("calculate-button").onclick = handleClickEvent;
     // feel free to add classes and id's to the HTML elements as you need, 
 
     // Bonus Challenges 
     // 8. Reverse the drop down order so that the sun is first.
-document.getElementById("calculate-button").onclick = handleClickEvent;
