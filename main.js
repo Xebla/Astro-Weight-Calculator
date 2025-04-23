@@ -35,6 +35,7 @@ function calculateWeight(weight, planetName) {
         // User selects planet
         if (name === planetName) {
             // Calculate and return new weight 
+            
             return weight * gravity;
         }
     }
@@ -48,14 +49,17 @@ function handleClickEvent(e) {
     const planetName = dropdown.options[dropdown.selectedIndex].text;
     // Calls previous function and stores value inside of "reselt"
     let result = calculateWeight(userWeight, planetName);
+    console.log("result:", result)
     // Clean up unnecessary decimals with Number()
    const cleanResult = Number(result.toFixed(2));
     // Get result text
-    const resultText = document.getElementById("result");
-   return resultText.textContent = `If you were on ${planetName}, you would weigh ${cleanResult} lbs!`;
+    const resultText = document.getElementById("output");
+    // resultText.innerHTML = `If you were on ${planetName}, you would weigh ${result}lbs!`;
+    resultText.innerText = "If you were on " + planetName + ", you would weigh " + result + "lbs!";
 } 
 
     // feel free to add classes and id's to the HTML elements as you need, 
 
     // Bonus Challenges 
     // 8. Reverse the drop down order so that the sun is first.
+document.getElementById("calculate-button").onclick = handleClickEvent;
