@@ -3,10 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Astro Weight Calculator</title>
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
   </head>
   <body>
-     <!-- Write your markup here  -->
-
+    <!-- Title?? -->
+    <h2> Astro Weight Calculator! </h2>
+    <input id="user-weight" type="text" placeholder="Weight (lbs)" />
+    <select id="planets"></select>
+    <p id="output"></p>
+    <p id="result"></p>
+    <!-- Link click function and button together -->
+    <button id="calculate-button" onclick="handleClickEvent()"> Calculate! </button>
+    <!-- Run Java Script at the end -->
     <script src="main.js" charset="utf-8"></script>
   </body>
 </html>
