@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html>
+
   <head>
+
     <meta charset="utf-8">
     <title>Astro Weight Calculator</title>
     <!-- Link CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Link Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Title?? -->
-    <h2> Astro Weight Calculator! </h2>
-    <input id="user-weight" type="text" placeholder="Weight (lbs)" />
-    <select id="planets"></select>
-    <p id="output"></p>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  
+    <body class="rick-theme">
+      <img src="https://www.bing.com/th/id/OGC.4ed5c70764b0a44a01e5e9d48af52c44?pid=1.7&rurl=https%3a%2f%2fimages-wixmp-ed30a86b8c4ca887773594c2.wixmp.com%2ff%2f1c107d2f-f955-413e-972e-a71a5cdbb666%2fdcr6foe-6350c695-c6d9-4e07-a783-2bff999e4e36.gif%3ftoken%3deyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFjMTA3ZDJmLWY5NTUtNDEzZS05NzJlLWE3MWE1Y2RiYjY2NlwvZGNyNmZvZS02MzUwYzY5NS1jNmQ5LTRlMDctYTc4My0yYmZmOTk5ZTRlMzYuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7DC-fqq2eYo2Y5lFsQof4ITVdon-apADanKTHivq1vI&ehk=9GbLT2drdT3REgD1F4xTSIdJqekKt9LN3Ep%2fm%2ffPYdk%3d" 
+      alt="Planet" class="planet">
+      <div class="container">
+        <h2 id="title"> Astro Weight Calculator! </h2>
+        
+          <div class="input-group">
+            <input id="user-weight" type="text" placeholder="Weight (lbs)" />
+            <select id="planets"></select>
+          </div>
+
+        <button id="calculate-button"> Calculate! </button>
+        <p id="output"></p>
     
-    <!-- Link click function and button together -->
-    <button id="calculate-button"> Calculate! </button>
+    </div>
     <!-- Run Java Script at the end -->
     <script src="main.js" charset="utf-8"></script>
   </body>
