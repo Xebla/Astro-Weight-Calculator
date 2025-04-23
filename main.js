@@ -17,7 +17,7 @@ const dropdown = document.getElementById("planets")
 
 // Loop through each item in the array
 planets.forEach(planet => {
-    //Create new <option> element to add to dropdown
+    // Create new <option> element to add to dropdown
     const option = document.createElement("option");
     // Set 'value' to be the multiplier portion of the option
     option.value = planet[1];
@@ -28,7 +28,7 @@ planets.forEach(planet => {
 });
 
 function calculateWeight(weight, planetName) { 
-    // 2. Write the code to return the correct weight 
+    // Loop through every planet 
     for (let i = 0; i < planets.length; i++) {
         const name = planets[i][0];         // Planet name
         const gravity = planets[i][1];      // Planet gravity
